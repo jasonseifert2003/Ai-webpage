@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clipless vs. Flat Pedals — Why Clipless Wins</title>
+  <style>
+    /* === Fall-Themed Apple-Inspired Design === */
+    :root {
+      --bg: #faf7f2;              /* Warm neutral background */
+      --header-bg: rgba(255, 237, 213, 0.95); /* Soft pumpkin tone */
+      --accent: #d97706;          /* Autumn orange */
+      --text-dark: #3b2f2f;       /* Deep brown for readability */
+      --muted: #6b4f4f;           /* Muted chestnut */
+      --card-bg: #fffaf5;         /* Light cream */
+      --border: rgba(107, 79, 79, 0.1);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', Helvetica, Arial, sans-serif;
+      color: var(--text-dark);
+      background: linear-gradient(to bottom, var(--bg), #f1e2cf);
+      line-height: 1.6;
+    }
+
+    .wrap {
+      display: grid;
+      min-height: 100vh;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    header {
+      background: var(--header-bg);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+      z-index: 10;
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
+
+    .brand span { color: var(--accent); }
+
+    .tagline {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px 40px;
+    }
+
+    h1, h2 {
+      font-weight: 600;
+      letter-spacing: -0.3px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--text-dark);
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      background: #f7e9d3;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 16px 0;
+    }
+
+    footer span { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="header-inner">
+        <div class="brand">MTB Fundamentals <span>Guide</span></div>
+        <div class="tagline">Clipless vs. Flats — A Practical Take</div>
+      </div>
+    </header>
+
+   <main>
+  <h1>Why Clipless Pedals Often Outperform Flats in Mountain Biking</h1>
+
+  <!-- Added image section -->
+  <div class="image-section">
+    <img src="pedal.png" alt="Clipless and Flat Pedal Comparison" class="pedal-image">
+  </div>
+
+  <div class="grid">
+    <section class="card">
+      <h2>Efficiency & Power Transfer</h2>
+      <p>
+        Clipless systems provide a secure and consistent connection between your shoes and pedals,
+        allowing nearly all your energy to be transferred directly into forward motion. This efficiency
+        minimizes energy loss due to foot slippage and repositioning, which often occurs with flat pedals.
+      </p>
+      <p>
+        The locked-in setup encourages a smoother, rounder pedal stroke, engaging muscles throughout the
+        entire rotation. Riders benefit from improved traction on climbs and greater stability across
+        unpredictable surfaces, helping maintain momentum over challenging terrain.
+      </p>
+      <p>
+        With clipless pedals, each stroke feels predictable and balanced. This stability reduces fatigue
+        over long rides, allowing riders to focus more on handling and line choice rather than worrying
+        about foot placement.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Control, Technique & Confidence</h2>
+      <p>
+        Clipless pedals enhance control by keeping your feet firmly in place through bumps and rough terrain.
+        This lets you maneuver the bike more precisely without the fear of losing contact, giving you confidence
+        to tackle aggressive lines and steeper descents.
+      </p>
+      <p>
+        Because clipless pedals respond directly to subtle shifts in body weight, they promote better technique
+        and bike-body connection. You can lift the rear wheel, pump through rollers, or maintain foot stability
+        during high-speed turns with less effort.
+      </p>
+      <p>
+        Modern clipless systems are easy to disengage with a simple twist, offering safety and comfort even for
+        new riders. The result is a ride that feels both connected and controlled—providing the ideal balance of
+        power and precision for mountain biking.
+      </p>
+    </section>
+  </div>
+</main>
+
+    <footer>
+      © <span id="year"></span> MTB Fundamentals — Fall Edition.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
